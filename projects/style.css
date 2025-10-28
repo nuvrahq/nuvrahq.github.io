@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('https://www.transparenttextures.com/patterns/carbon-fibre-big.png') repeat;
+  background-color: #000;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    border-bottom: 2px solid #00ff88;
+    background: rgba(10, 10, 10, 0.9);
+    box-sizing: 0 0 15px rgba(0, 255, 136, 0.3);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    color: #00ff88;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 600;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav a:hover {
+    color: #00ff88;
+    text-shadow: 0 0 8px #00ff88;
+}
+
+section {
+    padding: 4rem 1.5rem;
+    text-align: center;
+}
+
+section h2 {
+    color: #00ff88;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 8px #00ff88;
+}
+
+section p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+ul {
+    list-style: none;
+    max-width: 400px;
+    margin: 2rem auto;
+    text-align: left;
+}
+
+li {
+    background: rgba(20, 20, 20, 0.9);
+    padding: 1rem;
+    margin-bottom: 0.6rem;
+    border-left: 3px solid #00ff88;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0,255,136,0.2);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 0 15px rgba(0,255,136,0.3);
+}
+
+img {
+  width: 320px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,255,136,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 255, 136, 0.4);
+}
+
+footer {
+    background: rgba(10,10,10,0.95);
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 2px solid #00ff88;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.glow {
+    animation: pulse 3s infinite alternate;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 10px rgba(0,255,136,0.3); }
+    100% { box-shadow: 0 0 25px rgba(0,255,136,0.6); }
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+
+  img {
+    width: 90%;
+  }
+}
